@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <title>OpenDocs</title>
+</head>
+<body>
+    <div class="container">
+        <div class="docs-content">
+            <div class="docs-icon">
+                <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Docs.max-1100x1100.png" alt="image not found" class="file-icon" height="60vh" width="60vw"/>
+            </div>
+            <div class="menu-bar">
+                <div class="title-bar">
+                    <input type="text" class="file-name" placeholder=" Untitled document"/>
+                </div>
+            <div class="menu-items">
+                <div class="menu-file menu-item">New</div>
+                <div class="save-text menu-item">Text</div>
+                 <div class="save-pdf menu-item">PDF</div>  
+            </div>
+            </div>
+        </div>
+        <div class="menu-icon-bar">
+            <div class="font-decoration">
+            <select class="selector font-family-selector">
+                <option style="font-family: Noto Sans;" value="Noto Sans" selected>Noto Sans</option>
+                <option style="font-family:Arial" value="Arial">Arial</option>
+                <option style="font-family:Calibri" value="Calibri">Calibri</option>
+                <option style="font-family:Comic Sans MS" value="Comic Sans MS">Comic Sans MS</option>
+                <option style="font-family:Courier New" value="Courier New">Courier New</option>
+                <option style="font-family:Impact" value="Impact">Impact</option>
+                <option style="font-family:Georgia" value="Georgia">Georgia</option>
+                <option style="font-family:Garamond" value="Garamond">Garamond</option>
+                <option style="font-family:Lato" value="Lato">Lato</option>
+                <option style="font-family:Open Sans" value="Open Sans">Open Sans</option>
+                <option style="font-family:Palatino" value="Palatino">Palatino</option>
+                <option style="font-family:Verdana" value="Verdana">Verdana</option>
+            </select>
+        </div>
+        <div class="font-decoration">
+            <select class="selector font-size-selector">
+                <option value="8px">8</option>
+                <option value="10px">10</option>
+                <option value="12px">12</option>
+                <option value="14px" selected>14</option>
+                <option value="16px">16</option>
+                <option value="18px">18</option>
+                <option value="20px">20</option>
+                <option value="22px">22</option>
+                <option value="24px">24</option>
+                <option value="26px">26</option>
+            </select>
+        </div>
+        <div class="font-styling">
+            <div class="material-icons menu-icon icon-bold style-icon">format_bold</div>
+            <div class="material-icons menu-icon icon-italic style-icon">format_italic</div>
+            <div class="material-icons menu-icon icon-underline style-icon">format_underline</div>
+        </div>
+        <div class="font-highlighting">
+            <div class="menu-icon icon-color-fill">
+                <input class="color-picker background-color-picker" type="color" value="#ffffff" />
+                <div class="material-icons color-fill-icon">format_color_fill</div>
+            </div>
+            <div class="menu-icon icon-color-text">
+                <input class="color-picker text-color-picker" type="color" />
+                <div class="material-icons color-fill-text">format_color_text</div>
+            </div>
+        </div>
+        <div class="font-alignment">
+            <div class="material-icons menu-icon icon-align-left  align-icon">format_align_left</div>
+            <div class="material-icons menu-icon icon-align-center align-icon">format_align_center</div>
+            <div class="material-icons menu-icon icon-align-right align-icon">format_align_right</div>
+        </div>
+        <div class="text-view">
+            <div class="material-icons menu-icon icon-zoom-in zoom-icon">zoom_in</div>
+            <div class="material-icons menu-icon icon-zoom-out zoom-icon">zoom_out</div>
+        </div> 
+        </div>
+        <div class="content-editor">
+            <div class="text-editor" contenteditable="true" spellcheck="false"></div>
+        </div>   
+    </div>
+    <script src="htmltopdf.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
